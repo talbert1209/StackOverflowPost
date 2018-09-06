@@ -1,16 +1,21 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StackOverflowPost
+﻿namespace StackOverflowPost
 {
-    partial class Program
+    class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var post = new Post();
+            post.CreatePost("Can't Make This Work", "I am trying to write some code, but I keep getting errors.");
 
+            post.DownVote();
+            post.UpVote();
+            post.UpVote();
+            post.UpVote();
+            post.DownVote();
+            post.UpVote();
+            post.UpVote();
+
+            post.DisplayPost();
 
         }
     }
