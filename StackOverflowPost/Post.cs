@@ -9,6 +9,18 @@ namespace StackOverflowPost
             private DateTime _dateCreated;
             private int _voteValue;
 
+            public Post()
+            {
+                
+            }
+
+            public Post(string title, string description)
+            {
+                this._title = title;
+                this._description = description;
+                _dateCreated = DateTime.Now;
+            }
+
             public void CreatePost(string postTitle, string postDescription)
             {
                 _title = postTitle;
