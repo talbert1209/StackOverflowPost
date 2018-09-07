@@ -15,6 +15,7 @@
             post.DownVote();
             post.UpVote();
             post.UpVote();
+            post.UpVote();
 
             post.DisplayPost();
 
